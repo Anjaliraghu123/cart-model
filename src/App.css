@@ -1,38 +1,94 @@
-.App {
+.app {
+  padding: 10px;
+  background-color: rgb(198, 198, 193);
+}
+
+/* Heading */
+.heading {
   text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background-color: rgb(198, 198, 193);
+  justify-content: center;
+
+}
+.nav-btn{
+  display: flex;
+   text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  border: none;
+  padding: 2px;
+  background-color: rgb(198, 198, 193);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Product container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 4 columns */
+.product-card {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+}
+
+.nav{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(198, 198, 193);
+  padding: 10px;
+}
+.add{
+   padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  background-color: rgb(143, 14, 14);
   color: white;
+  width: 100px;
+  margin: auto;
+
+}
+/* Image */
+.product-image {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media (min-width: 320px) {
+  .product-card {
+    width: calc(50% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .product-card {
+    width: calc(25% - 20px);
   }
 }
