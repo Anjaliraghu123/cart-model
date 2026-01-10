@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Component/Navbar";
-import ProductList from "./Component/ProductList";
 import CartModal from "./Component/Cartmodel";
+import ProductList from "./ProductList";
 
 
 function App() {
@@ -35,7 +35,7 @@ setCart(cart.filter(item => item.id !== id));
 return (
 <div>
 <Navbar cartCount={cart.length} openCart={() => setOpenModal(true)} />
-<ProductList products={products} addToCart={addToCart} />
+< ProductList products={products} addToCart={addToCart} />
 {openModal && (
 <CartModal
 cart={cart}

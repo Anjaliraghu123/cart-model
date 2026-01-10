@@ -3,7 +3,7 @@ return (
 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
 <div className="bg-white w-11/12 md:w-1/2 p-6 rounded">
 <h2 className="text-xl font-bold mb-4">Cart Items</h2>
-
+ 
 
 {cart.length === 0 && <p>No items in cart</p>}
 
