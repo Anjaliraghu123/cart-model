@@ -1,7 +1,7 @@
 const Navbar = ({ cartCount, openCart }) => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-white shadow">
-      <h1 className="text-xl font-bold">Products</h1>
+    <nav className="flex justify-between items-center p-4 bg-black shadow">
+      <h1 className="text-xl font-bold text-white ">Products</h1>
 
       <button
         onClick={openCart}
