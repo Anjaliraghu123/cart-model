@@ -1,14 +1,16 @@
 const Navbar = ({ cartCount, openCart }) => {
-return (
-<div className="flex justify-between items-center p-4 bg-blue-600 text-white">
-<h1 className="text-xl font-bold">Fake Store</h1>
-<button onClick={openCart} className="relative">
-Cart 🛒
-<span className="ml-2 bg-red-500 px-2 rounded-full">{cartCount}</span>
-</button>
-</div>
-);
-};
+  return (
+    <nav className="flex justify-between items-center p-4 bg-white shadow">
+      <h1 className="text-xl font-bold">Products</h1>
 
+      <button
+        onClick={openCart}
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Cart ({cartCount})
+      </button>
+    </nav>
+  );
+};
 
 export default Navbar;
